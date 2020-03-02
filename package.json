@@ -54,9 +54,9 @@
         "webpack": "4.41.6"
     },
     "scripts": {
-        "start": "cross-env EXTEND_ESLINT=true react-scripts start",
-        "build": "cross-env EXTEND_ESLINT=true react-scripts build",
-        "test": "cross-env EXTEND_ESLINT=true react-scripts test",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
         "eject": "react-scripts eject",
         "lint": "eslint src --ext .ts --ext .tsx --cache --cache-location .eslintcache"
     },
