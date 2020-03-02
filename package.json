@@ -25,6 +25,7 @@
         "redux-query-react": "3.3.1"
     },
     "devDependencies": {
+        "@bahmutov/add-typescript-to-cypress": "2.1.2",
         "@testing-library/dom": "6.12.2",
         "@testing-library/jest-dom": "5.1.1",
         "@testing-library/react": "9.4.1",
@@ -38,6 +39,7 @@
         "@typescript-eslint/eslint-plugin": "2.21.0",
         "@typescript-eslint/parser": "2.21.0",
         "cross-env": "7.0.0",
+        "cypress": "4.1.0",
         "eslint": "6.8.0",
         "eslint-plugin-react": "7.18.3",
         "eslint-plugin-react-hooks": "2.5.0",
@@ -48,7 +50,8 @@
         "prettier": "1.19.1",
         "react-scripts": "3.4.0",
         "ts-toolbelt": "6.3.5",
-        "typescript": "3.8.3"
+        "typescript": "3.8.3",
+        "webpack": "4.41.6"
     },
     "scripts": {
         "start": "cross-env EXTEND_ESLINT=true react-scripts start",

@@ -47,7 +47,10 @@ export const useRequest = <A>(
             setResponse({ status: ResponseStatus.Pending });
         } else if (req.isFinished) {
             if (req.status && req.status >= 200 && req.status < 400) {
-                if (result === null) {
+                if (
+                    result === null ||
+                    (Array.isArray(result) && result.length === 0)
+                ) {
                     setResponse({ status: ResponseStatus.EmptyResult });
                 } else {
                     setResponse({

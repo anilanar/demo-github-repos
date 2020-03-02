@@ -32,15 +32,15 @@ export const Main = ({
                 <AdjustStroke />
             </Link>
         </h1>
-        <SearchForm
+        <Form
             css={{ width: '100%' }}
             onSubmit={(e: FormEvent<HTMLFormElement>): void => {
                 e.preventDefault();
-                setUsername(e.currentTarget['u']?.value || null);
+                setUsername(e.currentTarget['username']?.value || null);
             }}
         >
             <SearchInput
-                name="u"
+                name="username"
                 key={username ?? ''}
                 defaultValue={username ?? ''}
                 placeholder="Enter username..."
@@ -63,11 +63,9 @@ export const Main = ({
                     })}
                 </List>
             </output>
-        </SearchForm>
+        </Form>
     </section>
 );
-
-const SearchForm = styled(Form)``;
 
 const SearchInput = styled(Input)`
     width: 100%;
