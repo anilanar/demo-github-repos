@@ -25,6 +25,7 @@
         "redux-query-react": "3.3.1"
     },
     "devDependencies": {
+        "@anilanar/moxci": "0.0.4",
         "@bahmutov/add-typescript-to-cypress": "2.1.2",
         "@testing-library/dom": "6.12.2",
         "@testing-library/jest-dom": "5.1.1",
