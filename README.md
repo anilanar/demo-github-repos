@@ -42,4 +42,5 @@ This app demonstrates (to some degree) some of my opinions on how modern react a
 -   Cypress is satisfying, much better than Selenium in terms of dev-experience.
 -   Frontend community, following in JS celebrities' path, still believes that unit tests are no good. I highly disagree, and this repo lacking them is due to a race to completion.
 -   I can't recommend `eslint-plugin-simple-import-sort` enough. Just use it.
+-   One very good use case for Redux is routing, using `redux-first-router`. I've been using that approach since 3 years while other React devs have been rewriting their routing layers every every now and then.
 -   tbc...
