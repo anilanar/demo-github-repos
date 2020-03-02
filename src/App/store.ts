@@ -1,3 +1,4 @@
+import createHistory from 'history/createHashHistory';
 import queryString from 'query-string';
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
 import { connectRoutes } from 'redux-first-router';
@@ -10,6 +11,7 @@ import { getEntities, getQueries } from '../selectors';
 
 const Routes = connectRoutes(routesMap, {
     querySerializer: queryString,
+    createHistory,
 });
 
 const reducer = combineReducers({
